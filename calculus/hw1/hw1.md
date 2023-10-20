@@ -58,54 +58,98 @@ $$
 
 НОМИР 2
 
+**Условие.**  
+**Найти пределы функций $f(x)$ и $g(x)$ в $x = +\infty$ и в точках несуществования функций. Изобразить и проверить.**
+$$
+f(x) = \frac{x^2 + 2x - 8}{\lvert x + 4 \rvert}
+$$
+
+$$
+g(x) = -1 + \frac{\lvert x + 4 \rvert}{(x+4)(x-2)}
+$$  
+  
+**1.1 Найдём предел функции $f(x)$ в точке $x = +\infty$.**  
+
 $$
     f(x) = \frac{x^2 + 2x - 8}{\lvert x + 4 \rvert} = \frac{(x+4)(x-2)}{\lvert x + 4 \rvert}
 $$
-
+Степень многочлена в числителе больше степени многочлена в знаменателе, а числитель и знаменатель при стремлении аргумента к $+\infty$ принимают положитиельные значения, значит мы можем говорить о том, что предел функции стремится к $+\infty$
 $$
     \lim_{x \to +\infty} f(x) = +\infty
 $$
 
+**1.2 Аналогично найдём предел функции $f(x)$ при $x$ стремящемся к $-\infty$**
 $$
     \lim_{x \to -\infty} f(x) = +\infty
 $$
 
+**1.3 Здесь точка несуществования фукнции $x = -4$. Проверим чему равен предел при $x$ стремящемся к $-4-0$. Заменим $-4-0$ на $-4- \epsilon$, где $\epsilon > 0$**
 $$
-    \lim_{x \to -4-0} f(x) = 6
-$$
-
-$$
-    \lim_{x \to -4+0} f(x) = -6
+    \lim_{x \to -4-\epsilon} f(x) = \lim_{x \to -4-\epsilon} \frac{(x+4)(x-2)}{\lvert x + 4 \rvert} = f(-4-\epsilon) = \frac{(-4 - \epsilon +4)(-4 - \epsilon -2)}{\lvert -4 -\epsilon + 4 \rvert} = \frac{-\epsilon (-6 - \epsilon)}{\lvert-\epsilon \rvert} = \frac{-\epsilon (-6 - \epsilon)}{\epsilon} = 6 + \epsilon \implies \lim_{x \to -4-0} f(x) = 6
 $$
 
+**1.4 Аналогично при $x$ стремящемся к $-4+0$. Заменим $-4+0$ на $-4+ \epsilon$, где $\epsilon > 0$**
+
+$$
+    \lim_{x \to -4+\epsilon} f(x) = \lim_{x \to -4+\epsilon} \frac{(x+4)(x-2)}{\lvert x + 4 \rvert} = f(-4+\epsilon) = \frac{(-4 + \epsilon +4)(-4 + \epsilon -2)}{\lvert -4 +\epsilon + 4 \rvert} = \frac{\epsilon (-6 + \epsilon)}{\lvert\epsilon \rvert} = \frac{\epsilon (-6 + \epsilon)}{\epsilon} = -6 + \epsilon \implies \lim_{x \to -4-0} f(x) = -6
+$$
+
+**1.5 При помощи desmos изобразим график функции**
+https://www.desmos.com/calculator/losu1qrsmf
+
+![](2.1.jpg)
+  
+
+**2.1 Найдём предел функции $g(x)$ в точке $x = +\infty$.**  
 
 $$
     g(x) = -1 + \frac{\lvert x + 4 \rvert}{(x+4)(x-2)}
 $$
 
+Степень многочлена в числителе меньше степени многочлена в знаменателе,  а числитель и знаменатель при стремлении аргумента к $+\infty$ принимают положитиельные значения, значит мы можем говорить о том, что дробь стремится к $0$, а значит значение предела равно $-1$
+
 $$
     \lim_{x \to +\infty} g(x) = -1
 $$
 
+
+**2.2 Аналогично найдём предел функции $f(x)$ при $x$ стремящемся к $-\infty$**
 $$
     \lim_{x \to -\infty} g(x) = -1
 $$
 
+**2.3 Здесь точки несуществования фукнции: $x = -4$ и $x = -2$. Проверим чему равен предел при $x$ стремящемся к $-4-0$. Заменим $-4-0$ на $-4- \epsilon$, где $\epsilon > 0$**
+
 $$
-    \lim_{x \to -4-0} g(x) = -1 + \frac{1}{6} = -\frac{5}{6}
+    \lim_{x \to -4-\epsilon} g(x) = \lim_{x \to -4-\epsilon} -1 + \frac{\lvert x + 4 \rvert}{(x + 4)(x - 2)} = g(-4-\epsilon) = -1 + \frac{\lvert -4 -\epsilon + 4 \rvert}{(-4 - \epsilon +4)(-4 - \epsilon -2)} = -1 + \frac{\lvert-\epsilon \rvert}{-\epsilon (-6 - \epsilon)} = -1 + \frac{\epsilon}{\epsilon (-6 - \epsilon)} = -1 + \frac{1}{-6 - \epsilon} = -\frac{5}{6}  
 $$
+
+$$
+    \implies \lim_{x \to -4-0} g(x) = -\frac{5}{6}
+$$
+
+**2.4 Аналогично при $x$ стремящемся к $-4+0$.**
 
 $$
     \lim_{x \to -4+0} g(x) = -1 - \frac{1}{6} = -\frac{7}{6}
 $$
 
-$$
-    \lim_{x \to -2-0} g(x) = -\infty
-$$
+**2.5 Найдем значение предела при $x$ стремящемся к $-2 - 0$. Заменим $-2-0$ на $-2 - \epsilon$, где $\epsilon > 0$**
 
 $$
-    \lim_{x \to -2+0} g(x) = +\infty
+    \lim_{x \to -2-\epsilon} g(x) = g(-2 - \epsilon) =  -1 + \frac{\lvert -2 -\epsilon + 4 \rvert}{(-2 -\epsilon + 4)(-2 -\epsilon - 2)} = -1 + \frac{\epsilon + 2}{(2 - \epsilon)(-\epsilon - 4)} = -1 + \frac{\epsilon + 2}{\epsilon^2 + 2\epsilon - 8} = -1 - \frac{1}{4} = -\frac{5}{4}
 $$
+
+**2.6 Аналогично для $x$ стремящемся к $-2 + 0$**
+
+$$
+    \lim_{x \to -2+0} g(x) = -\frac{5}{4}
+$$
+
+**2.7 При помощи desmos изобразим график функции**
+https://www.desmos.com/calculator/olelwbxdrq
+
+![](2.2.jpg)
 
 НОМИР 3
 
