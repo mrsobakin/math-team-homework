@@ -178,6 +178,7 @@ https://www.desmos.com/calculator/olelwbxdrq
 
 
 *Решение:*
+
 1)
 $$\exists \lim_{x \to x_0} f(x) \ne f(x_0)$$
 
@@ -202,14 +203,15 @@ $$
 
 
 При помощи desmos изобразим график функции:
-TODO
+https://www.desmos.com/calculator/i9rsofx519?lang=ru
+![хуй](3.1.png)
 
 2)
 $$
     f(x) = \begin{equation}
         \begin{cases}
             2 + \frac{1}{x + 1}, &x < -2 \\
-            -1 + \frac{1}{x + 2}, & x \ge 2
+            -1 + \frac{1}{x + 2}, & x \ge -2
         \end{cases}
     \end{equation}
 $$
@@ -226,10 +228,9 @@ $$
     \lim_{x \to -1} f(x) = 0
 $$
 
-2.5) При помощи desmos изобразим график функции:
-TODO
-
-
+ При помощи desmos изобразим график функции:
+https://www.desmos.com/calculator/5bvvw9gekg?lang=ru
+![хуй](3.2.png)
 <div style="page-break-after: always;"></div>
 
 #### Задание 4
