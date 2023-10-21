@@ -211,7 +211,7 @@ $$
     f(x) = \begin{equation}
         \begin{cases}
             2 + \frac{1}{x + 1}, &x < -2 \\
-            -1 + \frac{1}{x + 2}, & x \ge 2
+            -1 + \frac{1}{x + 2}, & x \ge -2
         \end{cases}
     \end{equation}
 $$
