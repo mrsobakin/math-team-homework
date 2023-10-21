@@ -63,8 +63,11 @@ $$
     \therefore \lim_{n \to \infty} \frac{1}{14n + 49} = \lim_{n \to \infty} \frac{n}{n} \cdot \frac{1}{14 + \frac{49}{n}} = \frac{1}{14}
 $$
 4) 
+https://www.desmos.com/calculator/b1v5jxz8ri?lang=ru
 
 ![хуй](Un.png)
+
+https://www.desmos.com/calculator/3jci2djyvx?lang=ru
 
 ![хуй](Sn.png)
 
